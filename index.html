@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <img src="">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Seat Reservation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <section id="banner">
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img1.avif" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img2.avif" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img3.avif" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </section>
+  <section class="about my-5">
+    <div class="container">
+      <div class="text-center">
+        <h1>Recent holiday <span class="text-primary">Location</span></h1>
+        <hr>
+      </div>
+    </div>
+  </section>
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-6 col-12">
+      <h1 class="text-center">Bali</h1>
+      <p class="p-2">
+        Nestled in the heart of Indonesia, Bali stands as a testament to the perfect fusion of natural beauty, vibrant
+        culture, and warm hospitality. Blessed with pristine beaches, stunning coral reefs, verdant rice fields, and a
+        huge variety of flora and fauna, Bali is a wonderland that every traveller would love to explore.
+
+
+      </p>
+      <button type="button" class="btn btn-secondary text-center">Book Now</button><br><br>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Flight
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              To book a flight, you need your departure city, destination city, preferred travel date(s), and the number of passengers, along with their full names as they appear on their ID. You can book online via an airline's or travel agency's website or through their app, choosing between one-way, round-trip, or multi-city options. 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Train
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              To book a flight, you need your departure city, destination city, preferred travel date(s), and the number of passengers, along with their full names as they appear on their ID. You can book online via an airline's or travel agency's website or through their app, choosing between one-way, round-trip, or multi-city options. 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Bus
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              To book an ABT Express bus ticket, find an online booking platform, select your destination and travel dates, choose an available bus, and complete the payment process. 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-center">
+      <img class="img-fluid " src="bali.avif">
+
+    </div>
+  </div><br><br>
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-6 col-12">
+      <h1 class="text-center">Alaska</h1>
+      <p class="p-2">
+        Nestled in the heart of Indonesia, Bali stands as a testament to the perfect fusion of natural beauty, vibrant
+        culture, and warm hospitality. Blessed with pristine beaches, stunning coral reefs, verdant rice fields, and a
+        huge variety of flora and fauna, Bali is a wonderland that every traveller would love to explore.
+
+
+      </p>
+      <button type="button" class="btn btn-secondary text-center">Book Now</button><br><br>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Flight
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             To book a flight, you need your departure city, destination city, preferred travel date(s), and the number of passengers, along with their full names as they appear on their ID. You can book online via an airline's or travel agency's website or through their app, choosing between one-way, round-trip, or multi-city options. 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Train
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             To book a flight, you need your departure city, destination city, preferred travel date(s), and the number of passengers, along with their full names as they appear on their ID. You can book online via an airline's or travel agency's website or through their app, choosing between one-way, round-trip, or multi-city options. 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Bus
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              To book an ABT Express bus ticket, find an online booking platform, select your destination and travel dates, choose an available bus, and complete the payment process. 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-center">
+      <img width="480px" class="img-fluid " src="a.jpeg">
+
+    </div>
+  </div><br><br>
+
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <img height="500px" class="img-fluid " src="kailash.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Kailash</h5>
+          <p class="card-text">To book an ABT Express bus ticket, find an online booking platform, select your destination and travel dates, choose an available bus, and complete the payment process. </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img height="500px" class="img-fluid " src="paris.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Paris</h5>
+          <p class="card-text">To book an ABT Express bus ticket, find an online booking platform, select your destination and travel dates, choose an available bus, and complete the payment process. </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img height="500px" class="img-fluid " src="am.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bali</h5>
+          <p class="card-text">To book an ABT Express bus ticket, find an online booking platform, select your destination and travel dates, choose an available bus, and complete the payment process. </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img height="500px" class="img-fluid " src="burj.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dubai</h5>
+          <p class="card-text">To book an ABT Express bus ticket, find an online booking platform, select your destination and travel dates, choose an available bus, and complete the payment process. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="book" id="book">
+    <div class="container">
+
+      <div class="main-text">
+        <h1><span>B</span>ook</h1>
+      </div>
+      <hr><br><br>
+
+      <div class="row">
+
+        <div class="col-md-6 py-3 py-md-0">
+          <div class="card">
+            <img src="book-img.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-md-6 py-3 py-md-0">
+          <form action="#">
+
+            <input type="text" class="form-control" placeholder="Where To" required=""><br>
+            <input type="text" class="form-control" placeholder="How Many" required=""><br>
+            <input type="date" class="form-control" placeholder="Arrivals" required=""><br>
+            <input type="date" class="form-control" placeholder="Leaving" required=""><br>
+            <textarea class="form-control" rows="5" name="text" placeholder="Enter Your Name &amp; Details"></textarea>
+            <input type="submit" value="Book Now" class="submit" required="">
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="packages" id="packages">
+    <div class="main-text">
+      <h1><span>P</span>ackages</h1>
+    </div>
+    <hr><br><br>
+    <div class="container">
+
+      <div class="card" style="width: 18rem;">
+        <img src="download.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hotel Taj</h5>
+          <p class="card-text">For a hotel booking, you should write down essential information like your name, contact details, stay dates, and room type, as well as any special requests.</p>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h6>Price:<strong>$800</strong></h6>
+
+          <a href="#" class="btn">Book Now</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="download 2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hotel Palace</h5>
+          <p class="card-text">For a hotel booking, you should write down essential information like your name, contact details, stay dates, and room type, as well as any special requests.</p>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h6>Price:<strong>$900</strong></h6>
+
+          <a href="#" class="btn">Book Now</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="download 3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hotel King</h5>
+          <p class="card-text">For a hotel booking, you should write down essential information like your name, contact details, stay dates, and room type, as well as any special requests.</p>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h6>Price:<strong>$850</strong></h6>
+
+          <a href="#" class="btn">Book Now</a>
+        </div>
+
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="download 4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Hotel indira</h5>
+          <p class="card-text">For a hotel booking, you should write down essential information like your name, contact details, stay dates, and room type, as well as any special requests.</p>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h6>Price:<strong>$800</strong></h6>
+
+          <a href="#" class="btn">Book Now</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of what's new and exciting from us.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>© 2024 Company, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="fa-brands fa-twitter" href="#"><svg class="bi" width="40" height="40">
+          <use xlink:href="#instagram"></use>
+        </svg></a></li>
+        <li class="ms-3"><a class="fa-brands fa-instagram" href="#"><svg class="bi" width="40" height="40">
+              <use xlink:href="#instagram"></use>
+            </svg></a></li>
+        <li class="ms-3"><a class="fa-brands fa-facebook" href="#"><svg class="bi" width="40" height="40">
+              <use xlink:href="#facebook"></use>
+            </svg></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
