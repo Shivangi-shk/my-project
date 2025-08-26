@@ -2,6 +2,7 @@
     margin:0;
     padding: 0;
     
+    
 }
 #nav-bar{
     position: sticky;
@@ -9,8 +10,34 @@
     z-index:10;
 }
 .navbar{
-    background-image: linear-gradient(to right, rgb(34, 135, 206), rgb(223, 223, 235));
+    background-image: linear-gradient(to right,  #1e1e1e; rgb(91, 91, 177));
 }
+.navbar .nav-item .nav-link{
+    color: rgb(39, 20, 20) ;
+    
+}
+.navbar .nav-link:hover {
+  color: purple;
+}
+
+
+#darkModeBtn{
+    height: 50px;
+    width: 120px;
+}
+.dark-theme {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+.dark-theme .card {
+  background: #1e1e1e;
+  color: #fff;
+}
+.dark-theme .navbar .nav-item .nav-link{
+    color: rgb(236, 227, 227) ;
+    
+}
+
 .carousel-item img{
     height:70vh;
     width:100%;
@@ -18,6 +45,11 @@
 .card img{
     height: 300px;
     width:287px;
+}
+.container-fluid img{
+    height:70px;
+    width: 70px;
+    border-radius: 50px;
 }
 .book .submit{
     width:160px;
